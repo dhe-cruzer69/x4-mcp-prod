@@ -1,0 +1,12 @@
+server:
+  transport: stdio
+  rate_limit_per_minute: 60
+auth:
+  required: true
+  mode: token
+allow_list:
+  - web-search.search
+  - code-review.review_diff
+audit:
+  enabled: true
+  destination: evidence
